@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Close from "../assets/close.svg";
+import Close from "../assets/Close.svg";
 
 const Projects = ({ img, title, details }) => {
   const [modal, setModal] = useState(false);
