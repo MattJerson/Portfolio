@@ -1,0 +1,138 @@
+.nav__menu {
+  left: -100%;
+  width: 100%;
+  z-index: 100;
+  inset-block: 0;
+  position: fixed;
+  padding: 60px 30px;
+  background-color: var(--container-color);
+  transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.show-menu {
+  left: 0;
+}
+
+.nav__link {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+  padding-block: 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.dark-theme .nav__link{
+  border-color: hsl(0, 0%, 20%);
+}
+
+.nav__icon,
+.nav__name {
+  font-size: 24px;
+  color: var(--title-color);
+}
+
+.nav__name {
+  font-weight: var(--weight-500);
+}
+
+.active-nav .nav__icon,
+.active-nav .nav__name {
+  color: var(--first-color);
+}
+
+.nav__toggle {
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  z-index: 100;
+  height: 40px;
+  position: fixed;
+  border-radius: 5px;
+  padding: 12px 10px;
+  background-color: var(--container-color);
+}
+
+.nav__toggle span {
+  width: 20px;
+  height: 2px;
+  display: block;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  background-color: var(--title-color);
+}
+
+.animate-toggle span:first-child {
+  transform: rotate(45deg) translate(6px, 4px);
+}
+
+.animate-toggle span:nth-child(2) {
+  display: none;
+}
+
+.animate-toggle span:last-child {
+  transform: rotate(-45deg) translate(1px, 1px);
+}
+
+@media screen and (min-width: 1024px) {
+  .nav__menu {
+    all: unset;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav {
+    right: 30px;
+    z-index: 100;
+    display: flex;
+    inset-block: 0;
+    position: fixed;
+    align-items: center;
+  }
+  .nav__item {
+    margin-block: 20px;
+  }
+  .nav__link {
+    padding: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    border-bottom: none;
+    background-color: var(--container-color);
+  }
+  .nav__icon {
+    font-size: 20px;
+    margin-inline: auto;
+  }
+  .nav__name {
+    top: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    height: 100%;
+    line-height: 50px;
+    position: absolute;
+    visibility: hidden;
+    border-radius: 50px;
+    color: var(--text-white);
+    padding-inline: 30px 25px;
+    transition: all 0.3s ease;
+    font-size: var(--small-font-size);
+    background-color: var(--first-color);
+  }
+  .nav__link:hover .nav__name {
+    opacity: 1;
+    right: 27px;
+    visibility: visible;
+    color: var(--text-white);
+    border-radius: 30px 0 0 30px;
+  }
+  .nav__link:hover,
+  .active-nav {
+    background-color: var(--first-color);
+  }
+  .nav__link:hover .nav__icon,
+  .active-nav .nav__icon {
+    color: var(--text-white);
+  }
+}
