@@ -120,13 +120,13 @@ export const personalInfo = [
 export const stats = [
   {
     id: 1,
-    no: "12+",
+    no: "4+",
     title: "Years of <br /> Experience",
   },
 
   {
     id: 2,
-    no: "97+",
+    no: "4+",
     title: "Completed <br /> Projects",
   },
 
@@ -138,7 +138,7 @@ export const stats = [
 
   {
     id: 4,
-    no: "53+",
+    no: "4+",
     title: " Awards <br /> Won",
   },
 ];
