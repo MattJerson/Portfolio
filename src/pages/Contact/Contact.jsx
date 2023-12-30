@@ -1,5 +1,4 @@
 import "./Contact.css";
-import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FiSend } from "react-icons/fi";
 import {
@@ -8,6 +7,7 @@ import {
   FaGithub,
   FaInstagram,
 } from "react-icons/fa";
+import React, { useRef, useState } from "react";
 import { FaMeta, FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
@@ -88,17 +88,17 @@ const Contact = () => {
             </div>
           </div>
           <div className="contact__socials">
-            <a href="" className="contact__social-link">
+            <a href="https://www.facebook.com/MJFiguer" className="contact__social-link">
               <FaMeta />
             </a>
-            <a href="" className="contact__social-link">
+            <a href="https://twitter.com/MatttJerson" className="contact__social-link">
               <FaXTwitter />
             </a>
-            <a href="" className="contact__social-link">
-              <FaGithub />
-            </a>
-            <a href="" className="contact__social-link">
+            <a href="https://www.instagram.com/mjmiiranda/" className="contact__social-link">
               <FaInstagram />
+            </a>
+            <a href="https://github.com/MattJerson" className="contact__social-link">
+              <FaGithub/>
             </a>
           </div>
         </div>
