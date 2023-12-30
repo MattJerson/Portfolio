@@ -1,5 +1,6 @@
-import React from "react";
 import "./Contact.css";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { FiSend } from "react-icons/fi";
 import {
   FaEnvelopeOpen,
@@ -10,6 +11,53 @@ import {
 import { FaMeta, FaXTwitter } from "react-icons/fa6";
 
 const Contact = () => {
+  const form = useRef();
+  const [formValues, setFormValues] = useState({
+    user_name: "",
+    user_email: "",
+    subject: "",
+    message: "",
+  });
+  const [formError, setFormError] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (
+      !formValues.user_name ||
+      !formValues.user_email ||
+      !formValues.subject ||
+      !formValues.message
+    ) {
+      setFormError("All Fields are required");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_wqn5m7c",
+        "template_2tjik8i",
+        form.current,
+        "hLi1hCq9NX95nVgPb"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <section className="contact section">
       <h2 className="section__title">
@@ -54,13 +102,17 @@ const Contact = () => {
             </a>
           </div>
         </div>
-        <form className="contact__form">
+        <form ref={form} onSubmit={sendEmail} className="contact__form">
+          {formError && <p className="form__error">{formError}</p>}
           <div className="form__input-group">
             <div className="form__input-div">
               <input
                 type="text"
                 placeholder="Your Name"
                 className="form__control"
+                name="user_name"
+                value={formValues.user_name}
+                onChange={handleChange}
               />
             </div>
             <div className="form__input-div">
@@ -68,6 +120,9 @@ const Contact = () => {
                 type="email"
                 placeholder="Your Email"
                 className="form__control"
+                name="user_email"
+                value={formValues.user_email}
+                onChange={handleChange}
               />
             </div>
             <div className="form__input-div">
@@ -75,6 +130,9 @@ const Contact = () => {
                 type="text"
                 placeholder="Your Subject"
                 className="form__control"
+                name="subject"
+                value={formValues.subject}
+                onChange={handleChange}
               />
             </div>
           </div>
@@ -82,9 +140,12 @@ const Contact = () => {
             <textarea
               placeholder="Your Message"
               className="form__control textarea"
+              name="message"
+              value={formValues.message}
+              onChange={handleChange}
             ></textarea>
           </div>
-          <button className="button">
+          <button type="submit" className="button">
             Send Message
             <span className="button__icon contact__button-icon">
               <FiSend />
