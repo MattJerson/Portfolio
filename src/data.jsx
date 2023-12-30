@@ -107,7 +107,7 @@ export const personalInfo = [
   {
     id: 9,
     title: "Teams : ",
-    description: "steve.milner",
+    description: "Matt Jerson Figueroa",
   },
 
   {
