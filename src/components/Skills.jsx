@@ -1,7 +1,7 @@
 import React from "react";
 import { skills } from "../data";
 import { DiJavascript } from "react-icons/di";
-import { FaReact, FaNodeJs, FaAngular, FaBootstrap, FaHtml5, FaCss3Alt, FaPhp } from "react-icons/fa";
+import { FaReact, FaAngular, FaHtml5, FaCss3Alt, FaPython } from "react-icons/fa";
 
 const getIconComponent = (icon) => {
   switch (icon) {
