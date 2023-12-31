@@ -16,7 +16,11 @@ const getIconComponent = (icon) => {
     case "FaAngular":
       return <FaAngular color="#DD1B16" size={80}/>;
     case "FaPython":
-      return <FaPython color="#FFD43B" size={80}/>;
+      return <FaPython style={{
+        background: "linear-gradient(to right, #306998, #FFD43B)",
+        WebkitBackgroundClip: "text",
+        color: "transparent",
+      }} size={80}/>;
     default:
       return null;
   }
