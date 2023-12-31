@@ -241,22 +241,22 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: "Photo Editing",
+    title: "Classic Game Vault",
     details: [
       {
         icon: <FiFileText />,
         title: "Project : ",
-        desc: "Photo",
+        desc: "Entertainment Website",
       },
       {
         icon: <FiUser />,
         title: "Client : ",
-        desc: "Dribble",
+        desc: "Personal",
       },
       {
         icon: <FaCode />,
         title: "Language : ",
-        desc: "Adobe Photoshop",
+        desc: "HTML, CSS JavaScript",
       },
       {
         icon: <FiExternalLink />,
