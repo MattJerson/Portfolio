@@ -6,17 +6,17 @@ import { FaReact, FaAngular, FaHtml5, FaCss3Alt, FaPython } from "react-icons/fa
 const getIconComponent = (icon) => {
   switch (icon) {
     case "FaHtml5":
-      return <FaHtml5 color="#E34C26" size={80}/>;
+      return <FaHtml5 color="#E34C26" size={100}/>;
     case "FaCss3Alt":
-      return <FaCss3Alt color="#1572B6" size={80}/>;
+      return <FaCss3Alt color="#1572B6" size={100}/>;
     case "DiJavascript":
-      return <DiJavascript color="#F7DF1E" size={80}/>
+      return <DiJavascript color="#F7DF1E" size={100}/>
     case "FaReact":
-      return <FaReact color="#61DAFB" size={80}/>;
+      return <FaReact color="#61DAFB" size={100}/>;
     case "FaAngular":
-      return <FaAngular color="#DD1B16" size={80}/>;
+      return <FaAngular color="#DD1B16" size={100}/>;
     case "FaPython":
-      return <FaPython color="#306998" size={80}/>;
+      return <FaPython color="#306998" size={100}/>;
     default:
       return null;
   }
