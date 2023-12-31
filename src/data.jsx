@@ -220,8 +220,8 @@ export const skills = [
 
   {
     id: 4,
-    title: "Bootstrap",
-    icon: "FaBootstrap",
+    title: "Python",
+    icon: "FaPython",
   },
 
   {
