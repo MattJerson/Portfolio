@@ -10,6 +10,7 @@
 
 .contact__description {
   line-height: 1.6;
+  text-align: justify;
   font-size: var(--small-font-size);
 }
 
