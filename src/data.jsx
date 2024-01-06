@@ -241,7 +241,7 @@ export const portfolio = [
   {
     id: 1,
     img: Work1,
-    title: "Classic Game Vault",
+    title: "Classic GameVault",
     details: [
       {
         icon: <FiFileText />,
