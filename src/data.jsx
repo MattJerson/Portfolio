@@ -7,7 +7,7 @@ import {
   FaGraduationCap,
   FaCode,
 } from "react-icons/fa";
-import { FiFileText, FiUser, FiExternalLink } from "react-icons/fi";
+import { FiFileText, FiUser, FiExternalLink, FiBriefcase } from "react-icons/fi";
 
 import Work1 from "./assets/Project-1.jpg";
 import Work2 from "./assets/Project-2.jpg";
