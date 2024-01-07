@@ -144,33 +144,7 @@ export const stats = [
 ];
 
 export const resume = [
-  {
-    id: 1,
-    category: "experience",
-    icon: <FaBriefcase />,
-    year: "2018 - PRESENT",
-    title: "Web Developer <span> Envato </span>",
-    desc: "Lorem ipsum dolor sit amet, consectetur tempor incididunt ut labore adipisicing elit,",
-  },
-
-  {
-    id: 2,
-    category: "experience",
-    icon: <FaBriefcase />,
-    year: "2013 - 2018",
-    title: "UI/UX Designer <span> Themeforest </span>",
-    desc: "Lorem incididunt dolor sit amet, consectetur eiusmod dunt doldunt dol elit, tempor incididunt",
-  },
-
-  {
-    id: 3,
-    category: "experience",
-    icon: <FaBriefcase />,
-    year: "2005 - 2013",
-    title: "Consultant <span> Videohive </span>",
-    desc: "Lorem ipsum dolor sit amet, tempor incididunt ut laboreconsectetur elit, sed do eiusmod tempor duntt",
-  },
-
+  
   {
     id: 4,
     category: "education",
