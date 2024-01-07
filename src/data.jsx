@@ -249,8 +249,8 @@ export const portfolio = [
         desc: "Entertainment Website",
       },
       {
-        icon: <FiUser />,
-        title: "Client : ",
+        icon: <FiBriefcase />,
+        title: "Work : ",
         desc: "Personal",
       },
       {
@@ -269,22 +269,22 @@ export const portfolio = [
   {
     id: 2,
     img: Work2,
-    title: "Graphics Design",
+    title: "TechSnap",
     details: [
       {
         icon: <FiFileText />,
         title: "Project : ",
-        desc: "Website",
+        desc: "Educational/Informational Website",
       },
       {
-        icon: <FiUser />,
-        title: "Client : ",
-        desc: "Dribble",
+        icon: <FiBriefcase />,
+        title: "Work : ",
+        desc: "Research Project",
       },
       {
         icon: <FaCode />,
         title: "Language : ",
-        desc: "React JS",
+        desc: "Flask, HTML, CSS, JavaScript, Python",
       },
       {
         icon: <FiExternalLink />,
@@ -305,8 +305,8 @@ export const portfolio = [
         desc: "Video",
       },
       {
-        icon: <FiUser />,
-        title: "Client : ",
+        icon: <FiBriefcase />,
+        title: "Work : ",
         desc: "Dribble",
       },
       {
@@ -333,8 +333,8 @@ export const portfolio = [
         desc: "Video",
       },
       {
-        icon: <FiUser />,
-        title: "Client : ",
+        icon: <FiBriefcase />,
+        title: "Work : ",
         desc: "Dribble",
       },
       {
