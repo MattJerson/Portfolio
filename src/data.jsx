@@ -262,7 +262,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: "www.dribble.com",
+        desc: "https://game-vault-lake.vercel.app/",
       },
     ],
   },
