@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import { FiFileText, FiUser, FiExternalLink, FiBriefcase } from "react-icons/fi";
 
-import Work1 from "./assets/Project-1.jpg";
+import Work1 from "./assets/Project-1.png";
 import Work2 from "./assets/Project-2.jpg";
 import Work3 from "./assets/Project-3.jpg";
 import Work4 from "./assets/Project-4.jpg";
