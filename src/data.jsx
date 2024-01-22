@@ -132,8 +132,8 @@ export const stats = [
 
   {
     id: 3,
-    no: "81+",
-    title: "Happy <br /> Customers",
+    no: "2+",
+    title: "Certificates <br /> Received",
   },
 
   {
