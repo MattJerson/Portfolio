@@ -257,7 +257,7 @@ export const portfolio = [
       {
         icon: <FaCode />,
         title: "Language : ",
-        desc: "HTML, CSS JavaScript",
+        desc: "HTML, CSS, JavaScript",
       },
       {
         icon: <FiExternalLink />,
@@ -298,22 +298,22 @@ export const portfolio = [
   {
     id: 3,
     img: Work3,
-    title: "Video Editing",
+    title: "FitClub",
     details: [
       {
         icon: <FiFileText />,
         title: "Project : ",
-        desc: "Video",
+        desc: "Landing Page",
       },
       {
         icon: <FiBriefcase />,
         title: "Work : ",
-        desc: "Dribble",
+        desc: "Personal",
       },
       {
         icon: <FaCode />,
         title: "Language : ",
-        desc: "Adobe Premium",
+        desc: "HTML, CSS",
       },
       {
         icon: <FiExternalLink />,
