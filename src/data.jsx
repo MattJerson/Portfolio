@@ -318,7 +318,7 @@ export const portfolio = [
       {
         icon: <FiExternalLink />,
         title: "Preview : ",
-        desc: "www.dribble.com",
+        desc: "https://fit-club-pi.vercel.app/",
       },
     ],
   },
